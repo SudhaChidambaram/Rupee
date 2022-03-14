@@ -5,19 +5,19 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RupeeTest {
     @Test
     void checkEntityRupee10NotSameAsOtherRupee10() {
-        Rupee rupee1 = new Rupee(10);
-        Rupee rupee2 = new Rupee(10);
+        Rupee oneTenRupee = new Rupee(10);
+        Rupee anotherTenRupee = new Rupee(10);
 
-        assertNotSame(rupee1, rupee2);
+        assertNotSame(oneTenRupee, anotherTenRupee);
     }
 
     @Test
     void checkValueRupee10SameAsOtherRupee10() {
-        Rupee rupee1 = new Rupee(10);
-        Rupee rupee2 = new Rupee(10);
+        Rupee oneTenRupee = new Rupee(10);
+        Rupee anotherTenRupee = new Rupee(10);
 
 
-        assertEquals(rupee1, rupee2);
+        assertEquals(oneTenRupee, anotherTenRupee);
     }
 
     @Test
@@ -27,5 +27,13 @@ public class RupeeTest {
 
         assertNotEquals(oneFiveRupee, oneTenRupee);
 
+    }
+
+    @Test
+    void checkNullRupee() {
+        Rupee oneTenRupee = new Rupee(10);
+        Rupee anotherTenRupee = null;
+
+        assertNotEquals(oneTenRupee, anotherTenRupee);
     }
 }
