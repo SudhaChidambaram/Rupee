@@ -30,7 +30,7 @@ public class RupeeTest {
     }
 
     @Test
-    void checkNullRupee() {
+    void checkNullValueOfRupee() {
         Rupee oneTenRupee = new Rupee(10);
         Rupee anotherTenRupee = null;
 
@@ -38,7 +38,7 @@ public class RupeeTest {
     }
 
     @Test
-    void checkObjectTypesRupee() {
+    void checkObjectTypesOfRupeeAndAnotherObject() {
         Rupee oneTenRupee = new Rupee(10);
         Object anotherObject = new Object();
 
