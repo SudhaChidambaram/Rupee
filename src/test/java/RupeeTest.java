@@ -17,6 +17,15 @@ public class RupeeTest {
         Rupee rupee2 = new Rupee(10);
 
 
-        assertTrue(rupee1.checkValue(rupee2));
+        assertEquals(rupee1, rupee2);
+    }
+
+    @Test
+    void checkValueRupee5NotSameAsOtherRupee10() {
+        Rupee oneFiveRupee = new Rupee(5);
+        Rupee oneTenRupee = new Rupee(10);
+
+        assertNotEquals(oneFiveRupee, oneTenRupee);
+
     }
 }
