@@ -17,6 +17,6 @@ public class RupeeTest {
         Rupee rupee2 = new Rupee(10);
 
 
-        assertTrue(rupee1.equals(rupee2));
+        assertTrue(rupee1.checkValue(rupee2));
     }
 }
