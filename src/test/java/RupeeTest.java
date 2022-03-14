@@ -36,4 +36,12 @@ public class RupeeTest {
 
         assertNotEquals(oneTenRupee, anotherTenRupee);
     }
+
+    @Test
+    void checkObjectTypesRupee() {
+        Rupee oneTenRupee = new Rupee(10);
+        Object anotherObject = new Object();
+
+        assertNotEquals(oneTenRupee, anotherObject);
+    }
 }
